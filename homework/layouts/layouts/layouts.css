@@ -1,0 +1,37 @@
+html *{
+    box-sizing: border-box;
+}
+
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+header{
+    background-color: red;
+}
+nav, aside{
+    flex: 1 20%;
+}
+
+main{
+    font: 20px "times new roman", times, serif;
+    flex: 2 50%;
+}
+footer{
+    background-color: blue;
+}
+
+#wrapper{
+    display:flex;
+    flex-flow: column;
+    justify-content: flex-start;
+}
+#container{
+    display: flex;
+    flex-flow: row;
+}
+@media screen and (max-width:500px){
+   #container{
+        flex-flow: column;
+    }
+}

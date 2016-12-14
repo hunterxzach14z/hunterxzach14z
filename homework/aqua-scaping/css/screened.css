@@ -1,0 +1,234 @@
+/*Change the box model*/
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+
+/* *********** Base Styles ***********/
+
+
+/*The Body*/
+
+body {
+background-color: lightblue;
+  font-family: helvetica, arial, sans-serif;
+  font-size: 16px;
+/*  -webkit-text-size-adjust: 100%;*/
+}
+/*The Tables*/
+table, #pros, #cons{
+    border: 3px;
+}
+th{
+    background-color: royalblue;
+}
+
+/* Pictures*/
+picture{
+    display: inline;
+}
+
+/*The body inner-div*/
+
+#wrapper {
+  width: 100%;
+  padding: 0 1em 0;
+  position: relative;
+}
+
+
+/*The page header */
+#page-header{
+    background-color: darkblue;
+}
+#page-header h1{
+  margin: 0;
+}
+
+.tagline {
+  font-weight: normal;
+  font-style: italic;
+  font-size: .75em;
+  margin: 0 0 0 1em;
+}
+#takashi_amano{
+    display:inline-flex;
+}
+/*The page navigation*/
+
+#page-nav ul {
+  border: 1px solid #000;
+  border-bottom: 1px solid #fff;
+  list-style: none;
+}
+
+#page-nav .flexlist li {
+  display: flex;
+  flex: auto;
+}
+
+#page-nav a {
+  display: flex;
+  flex: auto;
+  background-color:yellowgreen;
+  color: black;
+  padding: 1% 5%;
+  text-decoration: none;
+}
+
+#page-nav a:hover {
+  background-color: #fff;
+  color: #000;
+  border-bottom: 1px solid #fff;
+}
+
+/*The main element*/
+.tank-image{
+    display: inline-flex;
+}
+.wireframe{
+    width: 100%;
+}
+
+/*The page footer*/
+
+#page-footer {
+  font-size: .7rem;
+  margin: 0;
+  background-color: #000;
+  color: #fff;
+}
+
+#page-footer > * {
+  padding: 0 0 0 1em;
+}
+
+#page-footer li {
+  padding-right: 1em;
+}
+#plant_products{
+    width: 100%;
+}
+p{
+    line-height: 2;
+    font-size: 1.25rem;
+}
+
+/*Lists as Flex Containers*/
+
+.flexlist {
+  align-items: baseline;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+}
+
+
+/* ****** Weather Presentation ******/
+
+/* ***** Utility Classes ***** */
+
+.hidden {
+  display: none;
+}
+
+@media screen and (min-width: 20em) {
+    
+      nav{
+        font-size: 1.75em;
+    }
+    #takashi_amano{
+        display: block;
+        
+    }
+    #song_of_forest, #huangshan_mountain{
+        align-items: center;
+        margin: 0px;
+    }
+     .tank_selection{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+    footer{
+        font-size: 2em;
+    }
+}
+
+/* ***** Medium Screens ***** */
+
+@media screen and (min-width: 44em) {
+  #page-header h1 {
+    font-size: 10vw;
+  }
+    nav{
+        font-size: 2em;
+    }
+    
+.flexlist {
+  display: flex;
+  align-items: baseline;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+}
+  .tagline {
+    font-size: 2em;
+    margin-top: -.5em;
+  }
+  #page-nav ul {
+    font-size: 4vw;
+  }
+  #page-footer {
+    font-size: 1.5rem;
+  }
+ .tank_selection{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+}
+
+
+
+/* ***** Large Screens ***** */
+
+@media screen and (min-width: 60em) {
+      nav{
+        font-size: 3em;
+    }
+    .flexlist {
+      display: flex;
+      align-items: baseline;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      color: #fff;
+    }
+    .tank_selection{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+  #page-footer {
+    font-size: 2.25rem;
+    height: 100px;
+  }
+    p{
+        font-size: 1.75rem;
+    }
+  
+    
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8"><!-- this sets the characters to the majority of the western languages-->
+<meta name="author" content="Zachary Smith">
+<title> Presentation on Javascript EventListener </title>
+     <link rel="stylesheet" type="text/css" href="css/presentation.css" media="screen">
+</head>
+
+<body>  
+    <header>Java Script Event Listeners</header>
+    <nav>
+    <a href="/homework/presentation.html" title="hunterxzach24z@github.io home page">Home</a>
+		</nav>
+    <main>
+        <h1>What is an Event Listener?</h1>
+        <p>An event listener is a procedure or function in a computer program that waits for an event to occur; that event may be a user clicking or moving the mouse, pressing a key on the keyboard, or an internal timer or interrupt.
+        </p>
+        <h2>How to use an Event Listener.</h2>
+        <li>Being Javascript you must use the script element</li>
+            <li>Then you will use this code to add an event listener. </li>
+            <li id="eventlistener">element.addEventListener(event, function, useCapture);</li>
+            <li>You can add many event handlers to one element, and have multiple of the Same type of event</li>
+        <li>The addEventListener() method makes it easier to control how the event reacts to bubbling. Naturally set to false.</li>
+        <h2>What is Bubbling?</h2>
+        <p>
+        Bubbling the inner most element's event is handled first and then the outer.<br>
+        Capturing the outer most element's event is handled first and then the inner.<br>
+             <li><a href="https://javascript.info/tutorial/bubbling-and-capturing">Example of Bubbling and Capturing</a></li>
+        </p>
+        <h2>What kind of Events are there?</h2>
+        <p>
+            <li>Mouse:  mousemove, mouseover, mouseout</li>
+            <li>Keyboard: keypress, keyup, keydown</li>
+            <li>Form: focus, blur, change</li>
+            <li>Window: resize, scroll</li>
+        </p>
+        <h2>You can also Remove the EventListeners</h2>
+            <p>
+    The removeEventListener() method removes event handlers that have been placed<br>
+One reason we would do this is when we have a answer given and don’t want it to change.<br> 
+To remove event handlers, the function specified with the addEventListener() method must be an external function.<br>
+                <li> <a href="http://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_element_addeventlistener_remove">Example of Removing an Event</a></li>
+            </p>
+    </main>
+</body>       
+</html>
