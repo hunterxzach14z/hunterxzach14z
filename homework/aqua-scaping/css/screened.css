@@ -117,8 +117,7 @@ table{
     width: 100%;
 }
 p{
-    line-height: 2;
-    font-size: 1rem;
+    line-height: 1.5;
 }
 
 /*Lists as Flex Containers*/
